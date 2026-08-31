@@ -1,0 +1,28 @@
+# Secrets and local configuration
+.env
+.env.local
+*.key
+*secrets*
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Node and build output (not used, kept so nothing lands here by accident)
+node_modules/
+dist/
+build/
+*.egg-info/
+
+# Editors and operating systems
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Local screenshots or scratch files
+*.png
+*.tmp
