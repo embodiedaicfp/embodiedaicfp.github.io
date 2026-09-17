@@ -4,16 +4,21 @@ Public web page for the FLAIRS-40 special track on Embodied AI Agents, Robotics,
 
 Track chair: Marius Silaghi, Florida Institute of Technology. Track co-chair: Muntaser Syed, Florida Institute of Technology.
 
-Live site: https://jemsbhai.github.io/flairs40-tracks/
+Live site: https://embodiedaicfp.github.io/
+
+Repository: https://github.com/embodiedaicfp/embodiedaicfp.github.io
 
 ## What is here
 
 - `index.html`: the whole page (call for papers, topics, dates, submission rules, organizers, program committee, contact)
 - `styles.css`: the stylesheet; fonts are loaded from Google Fonts
+- `assets/`: the supplied track logo and the FLAIRS society logo used on the official FLAIRS-40 website
 - `scripts/check.py`: scan to run before every commit
 - `.nojekyll`: tells GitHub Pages to serve the files as they are, without Jekyll
 
 There is no build step. Edit the files, run the check, commit, push.
+
+The track logo is displayed in the header and used for link previews. The FLAIRS society logo was sourced from https://www.flairs-40.info/ and links to that official conference website. Both images are stored locally and retain their original proportions.
 
 ## Editing
 
@@ -41,7 +46,9 @@ Exit code 0 and an `OK` line mean the page is clean. Any finding is printed as `
 
 ## Hosting
 
-GitHub Pages, deployed from the `main` branch, root folder. In the repository on GitHub: Settings, Pages, Source: Deploy from a branch, Branch: `main`, Folder: `/ (root)`. Pages publishes within a few minutes of each push.
+GitHub Pages serves this organization site from the public `embodiedaicfp/embodiedaicfp.github.io` repository, deployed from the `main` branch, root folder. In the repository on GitHub: Settings, Pages, Source: Deploy from a branch, Branch: `main`, Folder: `/ (root)`. Pages publishes within a few minutes of each push.
+
+Keep the canonical URL, Open Graph URL and image URL in `index.html` pointed at `https://embodiedaicfp.github.io/`. Page assets use relative paths so the same files also work in the local preview.
 
 ## License
 

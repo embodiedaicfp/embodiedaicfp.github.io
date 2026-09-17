@@ -92,6 +92,37 @@ h3 {
 
 /* Hero */
 
+.brand-logos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 10rem;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.track-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.conference-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.conference-brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .kicker {
   font-family: var(--sans);
   font-size: 0.95rem;
@@ -185,18 +216,12 @@ nav.sections a:hover, nav.sections a:focus-visible {
 section { margin-top: 3rem; }
 
 .topics {
-  list-style: none;
-  padding: 0;
+  list-style: disc;
+  padding-left: 1.25rem;
   margin: 0 0 1.25rem;
 }
 
-.topics li { margin: 0 0 1rem; }
-
-.topics strong {
-  font-family: var(--sans);
-  display: block;
-  margin-bottom: 0.15rem;
-}
+.topics li { margin: 0 0 0.45rem; }
 
 /* Dates */
 
@@ -270,6 +295,9 @@ footer p { margin: 0; }
 
 @media (max-width: 40rem) {
   .page { padding: 2.5rem 1rem 3rem; }
+  .brand-logos { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; }
+  .conference-brand { flex-direction: row; justify-self: start; gap: 1rem; text-align: left; }
+  .conference-brand img { width: 4.75rem; }
   .committee { columns: 1; }
   .dates th { width: auto; white-space: normal; }
 }

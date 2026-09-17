@@ -25,4 +25,6 @@ desktop.ini
 
 # Local screenshots or scratch files
 *.png
+!assets/embodied-ai-track-logo.png
+!assets/flairs-official-logo.png
 *.tmp
